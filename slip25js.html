@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>slip 25</title>
+    </head>
+    <body>
+        <script>
+            let n=prompt("enter numbers");
+            let rev=0;
+            let ld;
+            while(n!=0)
+            {
+                ld=n%10;
+                rev=rev*10+ld;
+                n=Math.floor(n/10);
+            }
+            console.log("reverse number"+rev);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Slip No.6</title>
+
+        <script>
+            function prime()
+            {
+                var flag = true;
+
+                let i,num;
+
+                num = document.getElementById("num") . value;
+
+                console.log(num);
+
+                for(i = 2;i <= num - 1 ; i++)
+                {
+                    if(num % 2 == 0)
+                    {
+                        flag = false;
+                        break;
+                    }
+                }
+
+                if(flag == true)
+                {
+                    document.getElementById("result") . innerHTML = (num + "is prime");
+                }
+                else
+                {
+                    document.getElementById("result") . innerHTML = (num +  "is not prime");
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <lable>Enter Number:</lable>
+        <input type = "text" id = "num" >
+
+        <br>
+
+        <input type = "submit" onClick = "prime()">
+
+        <br>
+        
+        <h4 id = "result"></h4>
+    </body>
+</html>

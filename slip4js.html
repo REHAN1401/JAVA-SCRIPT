@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Slip No.4</title>
+        <script>
+                function armstrong()
+                {
+                    let num = document.getElementById("num"). value;
+
+                    let temp = num;
+                    // console.log('temp' + temp);
+
+                    let sum = 0;
+                    let rem;
+
+                    while(num)
+                    {
+                        rem = num%10;
+                        // console.log('rem' + rem);
+                        sum = sum + rem * rem * rem;
+                        // console.log('sum' + sum);
+                        num = Math.trunc(num/10);
+                        // console.log(num);
+                    }
+                    if(temp == sum)
+                    {
+                        document.getElementById("result"). innerHTML = 'Armstrong Number';
+                    }
+                    else
+                    {
+                        document.getElementById("result"). innerHTML = 'Not An Armstrong Number';
+                    }
+                }
+        </script>
+    </head>
+
+    <body>
+        <label>Enter the number:</label>
+        <input type = "text" id = "num">
+
+    <br>
+        
+        <input type = "submit" onClick = "armstrong()">
+
+        <div id = 'result'></div>
+    </body>
+</html>

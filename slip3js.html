@@ -1,0 +1,38 @@
+<html>
+    <title>Slip No.3</title>
+
+    <script>
+        function cal()
+        {
+            let n = document.getElementById("num"). value;
+
+            let sum = 0;
+            let rem;
+
+            while(n>0)
+            {
+                r = n%10;
+
+                console.log('reminder' + r);
+
+                sum = sum+r;
+                console.log('add' + sum);
+
+                n = Math.floor(n/10) ;
+                console.log('division' + n);
+            }
+            console.log(sum);
+
+            document.write(sum);
+        }
+    </script>
+
+    <body>
+        <label>Enter Number:</label>
+    <br>
+        <input type = "text" name = "Calculate" id = "num">
+
+    <br>
+        <input type = "submit" onClick = "cal()">
+    </body>
+</html>

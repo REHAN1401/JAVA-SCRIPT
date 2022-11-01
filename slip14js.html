@@ -1,0 +1,41 @@
+<html>
+<head>
+<title> thse is a new document</title>
+<script>
+function valid()
+{
+if(f1.t1.value==""||f1.t2.value=="")
+{
+alert("please enter the all feilds");
+}
+else
+{
+var s1=f1.t1.value;
+var s2=f1.t2.value;
+if(s1==s2)
+{
+alert("password is valid ");
+window.location="tabel.html";
+}
+else
+{
+alert("username an password is not match");
+}
+}
+
+}
+</script>
+
+</head>
+<body>
+<form name ="f1">
+<h1><center>dr dy patil pratistan society</center>
+enter the user name:<input type="text" id="t1">
+
+
+enter username/password:<input type ="password" id="t2">
+
+
+<input type="button" value="submit" onclick="valid()">
+</body>
+</html>

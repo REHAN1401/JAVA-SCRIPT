@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Slip No. 7</title>
+
+        <script>
+            function count()
+            {
+                var str = document.getElementById("string") . value;
+
+                var vowel = 'AEIOUaeiou';
+
+                let count = 0;
+
+                for(var i = 0; i < str.length ; i++)
+                {
+                    if(vowel.indexOf(str[i]) != -1)
+                    {
+                        count = count + 1;
+                    }
+                }
+
+                document.getElementById("result") . innerHTML = ('Vowel=' + count );
+            }
+        </script>
+    </head>
+
+    <body>
+        <label>Enter String:</label>
+        <input type = "text" id = "string">
+
+        <br>
+        <br>
+        
+
+        <input type = 'submit' onClick = "count()">
+
+        <br>
+
+        <h4 id = "result"></h4>
+    </body>
+</html>

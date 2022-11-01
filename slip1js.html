@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Slip No.1</title>
+
+        <script>
+            function vol()
+            {
+                let r = document.getElementById("radius") . value;
+
+                let v = 4/3 * 3.14 * r * r * r;
+
+                console.log(v);
+
+                document.getElementById("volume"). innerHTML = v;
+            }
+        </script>
+    </head>
+
+    <body>
+        <label>Radius</label>
+        <br>
+        <input type = "text" id = "radius" value = "0">
+
+    </br>
+        <button onClick = "vol()">Calculate</button>
+
+    </br>
+
+        <label>Volume</label>
+        <div id = "volume"></div>
+
+    </body>
+</html>

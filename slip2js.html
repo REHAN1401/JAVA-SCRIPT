@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Slip No.2</title>
+
+        <script>
+            function table()
+            {
+                let n = document.getElementById("num"). value;
+
+                console.log(n);
+
+                for(let i=1;i <=10;i++)
+                {
+                    console.log(n*i);
+                    document.write(${n} X ${i} = ${n*i} + "<br>");
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <label>Enter Number:</label>
+        <input type = "text" id = "num" value = "0">
+
+    </br>
+        <input type = "submit" onClick = "table()">
+    </body>
+</html>

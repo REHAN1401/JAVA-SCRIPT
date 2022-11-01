@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Slip No. 5
+        </title>
+
+        <script>
+            function perfect()
+            {
+                let num = document.getElementById('num'). value;
+
+                if(num % 2 == 0)
+                {
+                    document.getElementById('result'). innerHTML = 'Perfect Number';
+                }
+                else
+                {
+                    document.getElementById('result'). innerHTML = 'Not a Perfect Number';
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <lable>Enter the number:</lable>
+        <input type = "text" id = "num">
+
+    <br>
+
+        <input type = "submit" onClick = "perfect()">
+
+        <div id = 'result'></div>
+    </body>
+</html>

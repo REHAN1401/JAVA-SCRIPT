@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>slip 16</title>
+    </head>
+    <body>
+        <script>
+            var str="hi my name is rehan";
+            var i;
+            var newstr=str.split(" ");
+            console.log(newstr);
+            for(i=0;i<newstr.length;i++)
+            {
+                if(newstr[i]===" ")
+                {
+                     newstr.splice(i,1,"*");
+                }
+                if(newstr[i]>='0' && newstr[i]<='9')
+                {
+                    newstr.splice(i,1,"?");
+                }
+            }
+            document.write(newstr.join(" "));
+        </script>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+    <head>
+      <title>
+        slip12
+      </title>
+    </head>
+    <body>
+        <form name="regi" onsubmit="return(valid());">
+        <label>NAME:</label>
+        <input type="text" id="na">
+        <br>
+        <br>
+        <label>ADDRESS:</label>
+        <input type="text" id="add">
+        <br>
+        <br>
+        <label>PINCODE:</label>
+        <input type="text" id="pin">
+        <br>
+        <br>
+        <input type="submit" >
+        </form>
+        </body>
+        <script>
+            function valid()
+            {
+                if(document.regi.na.value=="")
+                {
+                    alert("please provide your name");
+                }
+                 
+                
+                if(document.regi.pin.value==""|| document.regi.pin.value.length!=6 )
+                {
+                    alert("enter 6 digit code");
+            
+               // docuemnt.reg.pin.focus();
+              //  return false;
+                }
+              //  return (true);
+            }
+        </script>
+    </body>
+</html>

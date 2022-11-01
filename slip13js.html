@@ -1,0 +1,37 @@
+<html>
+    <head><title>slip13</title></head>
+    <body>
+        <form name="check" onsubmit="return(vari())">
+        <table>
+            <tr>
+                <th>NAME</th>
+                <TH><input type="text" id="name"></TH>
+                
+            </TR>
+            <TR>
+                <th>PASSWORD</th>
+                <TH><input type="text" id="PASS"></th>
+            </tr>
+            <TR>
+                
+              <th colspan="2"><button type="submit">login</button></Th>
+            </TR>
+        </table>
+        </form>
+        <script>
+            function vari()
+            {
+                let name=document.getElementById("name").value;
+                let PASS=document.getElementById("PASS").value;
+                if(name==null || name=="")
+                {
+                    alert("name cant be empty");
+                }
+                else if(PASS.length<6||PASS.lenght>6)
+                {
+                    alert("password must be greater than 6");
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Slip no.8</title>
+
+        <script>
+            function vowel()
+            {
+                var n = document.getElementById('var') . value;
+
+                var a = document.getElementById('vari'). value;
+
+                console.log(n);
+
+                let cnt = 0;
+            
+                for(var i=0;i<n.length;i++)
+                {
+                    if(n[i] == a)
+                    {
+                        cnt++;
+                    }
+                }
+                console.log(cnt);
+                document.getElementById("result"). innerHTML = ('Occuresnce of '+ a + '&nbsp' +'in the string:' + cnt);
+            }
+        </script>
+    </head>
+
+    <body>
+        <lable>Enter string:</lable>
+        <input type = "text" id = "var" >
+
+        <br>
+        <br>
+
+        <label>Enter the character:</label>
+        <input type = "text" id = "vari">
+
+        <br>
+        <br>
+
+        <input type = "submit" onClick = "vowel()">
+
+        <br>
+        <br>
+
+        <div id = "result"></div>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>slip11</title>
+    </head>
+    <body>
+        <script>
+           function x()
+           {
+            var n = document.getElementById("s").value;
+            let pos=document.getElementById("num").value;
+
+            var output = n.charAt(pos-1);
+            document.getElementById("result").innerHTML=output;
+           }
+        </script>
+
+        <label>enter string</label>
+        <input type="text" id="s">
+        <br>
+        <Br>
+        <label>enter the number</label>
+        <input type="text" id="num">
+        <br>
+        <br>
+        <input type="submit" onclick=x() >
+        <div id="result"></div>
+    </body>
+</html>

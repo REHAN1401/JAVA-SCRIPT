@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Slip No.9</title>
+        <script>
+            function string()
+            {
+                var str = document.getElementById('string') . value;
+
+                var newStr = str.split('');
+
+                var newStr1 = newStr.reverse();
+
+                var reverseString = newStr.join('');
+
+                console.log(reverseString);
+
+                if(str == reverseString)
+                {
+                    document.getElementById('result') . value = 'palindrom';
+                }
+                else
+                {
+                    document.getElementById('result') . value = 'Not Palindrom';
+                }
+
+                console.log(newStr);
+            }
+        </script>
+    </head>
+
+    <body>
+        <table>
+            <tr>
+                <th><label>Enter a String:</label></th>
+                <th><input type = "text" id = "string"></th>
+            </tr>
+
+            <tr>
+                <th><input type = "submit" onclick = "string()"></th>
+            </tr>
+
+            <tr>
+                <th colspan="2"><input type = "text" id = "result" value = '0'></th>
+            </tr>
+        </table>
+    </body>
+</html>

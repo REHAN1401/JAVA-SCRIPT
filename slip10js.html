@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Slip No.10</title>
+
+        <script>
+            function fact()
+            {
+                let num = document.getElementById('num') . value ; 
+                console.log(num);
+
+                let arr = [];
+
+                for(let i = 2 ; i <= num/2 ; i++)
+                {
+                    if(num % i == 0)
+                    {
+                        console.log(i);
+
+                        arr.push(i);
+                        document.getElementById('result') . innerHTML = ${arr};
+                    }
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <label>Enter a number:</label>
+        <input type = "text" id = "num">
+
+        <br>
+        <br>
+
+        <input type = "submit" onClick = "fact()">
+
+        <br>
+        <br>
+
+        <div id = 'result'></div>
+    </body>
+</html>
